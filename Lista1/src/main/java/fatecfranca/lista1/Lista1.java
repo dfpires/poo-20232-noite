@@ -21,20 +21,18 @@ public class Lista1 {
                 30, false, 3.20f);
         // toda classe em Java recebe um pacote chamado 
         // java.lang, que possui várias classes
-        System.out.println("Id: " + obj1.id + "\n Nome " + 
-            obj1.nome + "\n Descrição " + obj1.descricao +
-            "\n Qtde: " +obj1.qtde + "\n Preço " + obj1.preco);
+        obj1.mostraObjeto();
         
         Produto obj2 = new Produto(2, "sorvete", "sabor baunilha", 
                         12, true, 6.80f);
         // toda classe em Java recebe um pacote chamado 
         // java.lang, que possui várias classes
-        System.out.println("Id: " + obj2.id + "\n Nome " + 
-            obj2.nome + "\n Descrição " + obj2.descricao +
-            "\n Qtde: " +obj2.qtde + "\n Preço " + obj2.preco);
+        obj2.mostraObjeto();
         
         JOptionPane.showMessageDialog(null, 
            "Id: " + obj2.id + "\n Nome " + obj2.nome + "\n Descrição " + 
            obj2.descricao + "\n Qtde: " +obj2.qtde + "\n Preço " + obj2.preco);
+    
+        Produto obj3 = new Produto();
     }
 }

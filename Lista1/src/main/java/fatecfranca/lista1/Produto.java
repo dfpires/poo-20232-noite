@@ -8,8 +8,23 @@ public class Produto {
     String descricao; // String é um tipo de dado de Classe
     // outros exemplo do tipo Classe: Integer, Float, Boolean
 
+    public Produto(){
+       
+    }
     public Produto(int id, String nome, String descricao, 
             int qtde, boolean estoqueCritico, float preco){
-        
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.qtde = qtde;
+        this.estoqueCritico = estoqueCritico;
+        this.preco = preco;
+    }
+    public void mostraObjeto(){
+        System.out.println("Id: " + this.id + "\n Nome " + 
+            this.nome + "\n Descrição " + this.descricao +
+            "\n Qtde: " +this.qtde + "\n Preço " + this.preco + 
+                " Estoque crítico " + 
+                (this.estoqueCritico ? "Sim" : "Não"));
     }
 }
