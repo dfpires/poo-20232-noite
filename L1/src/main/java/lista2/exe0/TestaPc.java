@@ -19,8 +19,15 @@ public class TestaPc {
         obj1.setMarca("Lenovo");
         obj1.setModelo("IdeaPad 3");
         obj1.setRam(16);
-        
         System.out.println("Ram " + obj1.getRam());
+        
+        Pc obj2 = new Pc("Dell", "Vosto 15", "i5",
+                32, 512);
+        System.out.println(obj2.toString());
+        Pc obj3 =  new Pc("Dell", "Vosto 15",
+                "i5", 19, 200);
+        System.out.println(obj3.toString());
+        
     }
     
 }
