@@ -52,8 +52,6 @@ public abstract class Funcionario {
                 salario + '}';
     }
     
-    public float calculaSalario(){
-        return this.salario;
-    }
+    public abstract float calculaSalario();
     
 }

@@ -14,6 +14,7 @@ public class Testa {
         System.out.println(objeto.toString());
         System.out.println(objeto.calculaSalario());
     }
+    
     public static void main(String[] args) {
         // TODO code application logic here
         
@@ -27,6 +28,7 @@ public class Testa {
         Diretor objDir = new Diretor(1000, "Ciclano",
                 "Franca", "789", 6000);
        mostra(objDir);
+       
     }
     
 }
